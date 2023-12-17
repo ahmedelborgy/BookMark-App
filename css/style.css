@@ -1,0 +1,192 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+   ::selection {
+    background-color: #fec260;
+    color: #352e28;
+}
+  body{
+    font-family:'PT Sans Caption', sans-serif;
+  
+}
+ .main h1{
+    font-size: 50px;
+    font-family: 'Pacifico', cursive;
+    color: #352e28;
+    isolation: isolate;
+  position: relative;
+  margin: auto;
+ z-index: 4;
+ 
+}
+.main h1:hover::before {
+    height: 50%;
+}
+
+
+.main h1::before{
+    content:"";
+    position: absolute;
+    width:100%;
+    height: 25%;
+    left:0;
+    bottom: 10px;
+    right:0;
+    background-color: #fec260;
+    transition: height 350ms;
+    z-index: -1;
+} */
+.main h1::before{
+    content: "";
+    position: absolute;
+    /* width: 100%; */
+    height: 25%;
+    background-color: #fec260;
+    transition: height 350ms;
+    bottom: 10px;
+    left: 0px;
+     right: 0px;
+     z-index: -1;
+}
+  .btn-submit{
+    color: white;
+    background-color: #d1512d;
+   transition: all 1s;
+  }
+  .btn-submit:hover{
+    background-color: #a03315;
+    color: white;
+  }
+.bookmark-body h2 {
+    font-family: "Righteous", cursive;
+    font-size: 25px;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main {
+    min-height: 100vh;
+    background-color: #f7ecde;
+}
+
+.bookmark-body {
+    border-width: 2px 0 2px 0;
+    border-style: dotted;
+    border-color: #352e28;
+}
+
+ 
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #d99c39;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #fec26055;
+}
+
+
+
+
+.btn-visit {
+    color: #fff;
+    background-color: #9eb23b;
+    border-color: #9eb23b;
+    transition: all 1s;
+    border-radius: 50%;
+}
+.btn-visit:hover{
+    color: #fff;
+    background-color: #8a9e23;
+    border-color: #6e8018;
+}
+
+
+
+.btn-delete {
+    color: #fff;
+    background-color: #eb1d36;
+    border-color: #eb1d36;
+    transition: all 1s;
+}
+.btn-delete:hover{
+    color: #fff;
+    background-color: #d30820;
+    border-color: #ba081d;
+}
+
+
+.btn-check:focus+.btn, .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13,110,253,0);
+}
+
+
+
+
+.circles span:nth-child(1) {
+    background-color: #f15f5d;
+}
+.circles span:nth-child(2) {
+    background-color: #febe2e;
+}
+.circles span:nth-child(3) {
+    background-color: #4db748;
+}
+.circles span {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+
+
+.modal-footer {
+ border: none;
+display: flex;
+   align-items: flex-start;
+    justify-content: flex-start;
+   padding-left: 3rem;
+}
+.btn-close:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13,110,253,0);
+    opacity: 1;
+}
+.btn-close{
+    color:#212529 ;
+    font-weight: 700;
+    opacity: 1;
+    transition: all 1s;
+}
+ .btn-close:hover{
+    
+    background-color: tomato;
+    color: white;
+    
+} 
+.modal{
+    background-color: #0007;
+    }
+
+
+.box-conent {
+    width: 500px;
+    z-index: 10;
+}
+
+.rules i {
+    color: #bb4120;
+}
+.btn-submit:focus{
+    border: black 2px solid;
+    background-color: white;
+    color:black;
+}

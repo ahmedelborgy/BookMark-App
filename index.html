@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Marke</title>
+    <link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <div class="modal w-100 d-none  align-items-center justify-content-center">
+    <div class="modal-dialog  bg-danger   ">
+
+      <div class="modal-content border-0 p-4 rounded-2 shadow-lg  position-static">
+        <div class="modal-header  border-0">
+         
+          <div class="circles d-flex">
+            <span class="rounded-circle me-2 "></span>
+            <span class="rounded-circle me-2"></span>
+            <span class="rounded-circle me-2"></span>
+          </div>
+          <button type="button" class="btn-close .btn-c fw-bold" data-bs-dismiss="modal"
+           aria-label="Close"></button>
+        </div>
+        <div class="modal-body ">
+          <p class="m-0 pb-2 w-75">
+            Site Name or Url is not valid, Please
+             follow the rules below :
+          </p>
+        </div>
+        <div class="modal-footer  p-0">
+          
+          <ol class="rules list-unstyled m-0"> 
+            <li>
+              <i class="fa-regular fa-circle-right p-2"></i>Site name must
+              contain at least 3 characters
+            </li>
+            <li>
+              <i class="fa-regular fa-circle-right p-2"></i>Site URL must be a
+              valid one
+            </li>
+          </ol>
+       
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+
+<section class="main">
+  
+
+
+<section class="container">
+
+    <h1 class="py-3 w-25 position-relative text-center   ">Bookmarker</h1>
+
+
+  <div class="bookmark-body w-100 p-3 py-4 mt-5 d-flex flex-column justify-content-center align-items-center gap-4">
+    <h2>
+      <i class="fa-solid fa-bookmark"></i>
+      Bookmark your favorite sites
+      <i class="fa-solid fa-bookmark"></i>
+    </h2>
+<!-- ======================Bookmark Name========================== -->
+   
+    <div class="site-name w-100 d-flex flex-column justify-content-center">
+      <label for="bookmarkName" class="pb-2  fw-bold">
+        <i class="fa-solid  fa-book-bookmark pe-2"></i>
+        Site Name</label>
+      <input type="text" onkeyup="validationName()" placeholder="Bookmark Name" class="form-control" 
+      id="bookmarkName">
+    </div>
+           <!-- ======================bookmarkUR========================== -->
+   
+
+           <div class="site-url w-100 d-flex flex-column justify-content-center">
+      <label for="bookmarkURL" class="pb-2 fw-bold">
+        <i class="fa-solid fa-link pe-2">
+          
+        </i>Site URL</label>
+      <input type="url" placeholder="Website URL" onkeyup="validationUrl()" class="form-control" id="bookmarkURL">
+    </div>
+    <button class="btn btn-submit px-5" id="submitBtn">Submit</button>
+  </div>
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+<section class="container">
+
+  <table class="table mt-4 text-center bg-light">
+    <thead>
+      <tr><th class="text-capitalize">index</th>
+      <th class="text-capitalize">Website Name</th>
+      <th class="text-capitalize">Visit</th>
+      <th class=" text-capitalize">Delete</th>
+    </tr></thead>
+    <tbody id="tableContent" >
+        <!-- <tr>
+          <td>1</td>
+          <td>Mmmm</td>              
+          <td>
+            <a href="https://fontawesome.com/download" target="_blank"
+            class="btn btn-visit border-1" data-index="0">
+              <i class="fa-solid fa-eye pe-2"></i>Visit
+            </a>
+          </td>
+          <td>
+
+            <button class="btn btn-delete pe-2" data-index="0">
+              
+              <i class="fa-solid fa-trash-can"></i>
+              Delete
+            
+            </button>
+          </td>
+      </tr> -->
+    
+      </tbody>
+  </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+    <!-- external js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
